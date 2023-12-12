@@ -32,8 +32,13 @@
             fetch('https://ipapi.co/json/')
             .then(response=>response.json())
             .then((responseJson => {
-                document.write(JSON.stringify(responseJson))
-            }))
+                document.write(JSON.stringify(responseJson))    
+            }))          
+        </script>
+        <script>
+            let emptyArray = []
+            emptyArray.push(responseJson)
+            console.log(emptyArray)
         </script>
     </body>
 
