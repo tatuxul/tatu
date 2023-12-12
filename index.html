@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
         <h1>
             <p>hello world</p>
             <p>hello user</p>
         </h1>
+    </head>
+    <body>
+        <script src="analytics.js">
+            language: analytics.url
+        </script>
+        <script>
+            let language = navigator.language;
+            <!-- alert('language: ' + language); -->
+            document.body.innerHTML = '<h1> language: ' + language + '</h1>'
+        </script>
     </body>
-
-    <script src="analytics.js">
-        language: analytics.url
-    </script>
-
-    <script>
-        let language = navigator.language;
-        <!-- alert('language: ' + language); -->
-        document.body.innerHTML = '<h1> language: ' + language + '</h1>'
-    </script>
-
 </html>
