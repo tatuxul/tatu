@@ -11,9 +11,8 @@
             language: analytics.url
         </script>
         <script>
-            let language = navigator.language;
-            <!-- alert('language: ' + language); -->
-            document.body.innerHTML = '<h1> language: ' + language + '</h1>'
+            document.body.innerHTML = '<h1> language: ' + navigator.language + '</h1>';
+            document.body.innerHTML = '<h3> cookies: ' + navigator.cookieEnabled + '</h3>';
         </script>
     </body>
 </html>
