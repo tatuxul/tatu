@@ -28,6 +28,13 @@
             let j = location.href
             document.write(i + j)
         </script>
+        <script>
+            fetch('https://ipapi.co/json/')
+            .then(response=>response.json())
+            .then((responseJson => {
+                document.write(responseJson)
+            }))
+        </script>
     </body>
 
     <!-- https://dev.to/gvinod1991/capture-visitors-in-html-js-to-your-website-1b0m -->
