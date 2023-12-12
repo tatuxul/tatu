@@ -32,7 +32,7 @@
             fetch('https://ipapi.co/json/')
             .then(response=>response.json())
             .then((responseJson => {
-                document.write(responseJson)
+                document.write(JSON.stringify(responseJson))
             }))
         </script>
     </body>
